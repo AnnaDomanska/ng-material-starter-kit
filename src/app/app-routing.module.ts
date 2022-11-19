@@ -4,6 +4,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { CategoryListComponent } from './components/category-list/category-list.component';
 import { CryptoChipsComponent } from './components/crypto-chips/crypto-chips.component';
 import { PublicHolidaysComponent } from './components/public-holidays/public-holidays.component';
+import { CategoryCheckboxComponent } from './components/category-checkbox/category-checkbox.component';
 import { ProductListComponentModule } from './components/product-list/product-list.component-module';
 import { ProductsServiceModule } from './services/products.service-module';
 import { CategoryListComponentModule } from './components/category-list/category-list.component-module';
@@ -12,9 +13,10 @@ import { CryptoChipsComponentModule } from './components/crypto-chips/crypto-chi
 import { CryptoServiceModule } from './services/crypto.service-module';
 import { PublicHolidaysComponentModule } from './components/public-holidays/public-holidays.component-module';
 import { PublicHolidaysServiceModule } from './services/public-holidays.service-module';
+import { CategoryCheckboxComponentModule } from './components/category-checkbox/category-checkbox.component-module';
 
 @NgModule({
-  imports: [RouterModule.forRoot([{ path: 'products', component: ProductListComponent }, { path: 'categories', component: CategoryListComponent }, { path: 'crypto', component: CryptoChipsComponent }, { path: 'public-holidays', component: PublicHolidaysComponent }]), ProductListComponentModule, ProductsServiceModule, CategoryListComponentModule, CategoriesServiceModule, CryptoChipsComponentModule, CryptoServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule],
+  imports: [RouterModule.forRoot([{ path: 'products', component: ProductListComponent }, { path: 'categories', component: CategoryListComponent }, { path: 'crypto', component: CryptoChipsComponent }, { path: 'public-holidays', component: PublicHolidaysComponent }, { path: 'checkbox-categories', component: CategoryCheckboxComponent }]), ProductListComponentModule, ProductsServiceModule, CategoryListComponentModule, CategoriesServiceModule, CryptoChipsComponentModule, CryptoServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CategoryCheckboxComponentModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
