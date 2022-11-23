@@ -93,6 +93,12 @@
       "container": "<ng-container *ngIf=\"$detailVariable$ | async as $itemVariable$\">$content$</ng-container>",
       "content": "$content$"
     },
+
+    "character-card": {
+      "container": "<ng-container *ngIf=\"$detailVariable$ | async as $itemVariable$\">$content$</ng-container>".
+        "content": "{{ $itemVariable$ }} <br><br><br> <img src=\"{{$itemVariable$}}\">"
+    },
+
     "text": {
       "container": "<ng-container *ngIf=\"$detailVariable$ | async as $itemVariable$\">$content$</ng-container>",
       "content": "{{ $itemVariable$ }}"

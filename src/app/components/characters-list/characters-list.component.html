@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card-title>HP characters list</mat-card-title>
+  <mat-card-content>
+    <mat-list role="list">
+       <mat-list-item role="listitem" *ngFor="let item of list$ | async"><a [routerLink]="['/character', item.id]">{{item.character}}</a>
+       </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
