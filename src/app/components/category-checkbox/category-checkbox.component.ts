@@ -12,7 +12,7 @@ import {CategoriesService} from "../../services/categories.service";
 })
 export class CategoryCheckboxComponent {
 
-  readonly list$: Observable<ProductModel[]> = this._categoriesService.getAll();
+  readonly list$: Observable<string[]> = this._categoriesService.getAll();
 
   constructor(private _categoriesService: CategoriesService) {
   }

@@ -22,7 +22,7 @@ export class ProductFormComponent {
   });
 
 
-  readonly categoryList$: Observable<ProductModel[]> = this._categoriesService.getAll();
+  readonly categoryList$: Observable<string[]> = this._categoriesService.getAll();
 
   constructor(private _productsService: ProductsService, private _categoriesService: CategoriesService) {
   }

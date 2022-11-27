@@ -12,10 +12,10 @@ import {ProductListComponentModule} from "./components/product-list/product-list
   ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
         BrowserAnimationsModule,
         HttpClientModule,
-        ProductListComponentModule
+        ProductListComponentModule,
+      AppRoutingModule
     ],
   providers: [],
   bootstrap: [AppComponent]
