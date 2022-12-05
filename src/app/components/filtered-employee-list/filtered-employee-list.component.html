@@ -1,0 +1,13 @@
+<mat-card>
+  <mat-card-title> Age Ranges </mat-card-title>
+  <mat-card-content>
+  <mat-selection-list role="list" fxLayout="row" [multiple]="false">
+    <mat-list-option role="listoption" *ngFor="let item of ageRanges" [value]="item" (click) =selectAgeRange(item)>
+      {{item.text}}
+    </mat-list-option>
+  </mat-selection-list>
+  </mat-card-content>
+</mat-card>
+<h1>Employees</h1>
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let item of employees$ | async">{{item.name}} {{item.age}}</mat-list-item></mat-list>

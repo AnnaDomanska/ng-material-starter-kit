@@ -8,7 +8,11 @@ export class UserService {
   constructor(private _httpClient: HttpClient) {
   }
 
-  create(user: { password: any; address: { zipcode: any; number: any; city: any; street: any }; phone: any; name: { firstname: any; lastname: any }; email: any; username: any }): Observable<UserModel> {
+  create(user: { password: any;
+    address: { zipcode: any;
+      number: any;
+      city: any;
+      street: any }; phone: any; name: { firstname: any; lastname: any }; email: any; username: any }): Observable<UserModel> {
     // @ts-ignore
     return this._httpClient.post('https://fakestoreapi.com/users', user);
   }
